@@ -1,4 +1,5 @@
-﻿using System;
+﻿using menu.Calculos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,13 @@ namespace menu
         public const int OPERACAO_MEDIA = 2;
         public const int ADICAO = 3;
         public const int SUBTRACAO = 4;
+        public const int RAIZ = 5;
         public static void menu()
         {
             while (true)
             {
-                Console.WriteLine(" Digite o número 1 para sair do programa:\n" +
-                    " Digite o número 2 para fazer Média de notas:\n" +
-                    " Digite o número 3 para fazer uma adição:\n" +
-                    " Digite o número 4 para fazer uma subtração:\n");
+                Console.WriteLine("================Escolha sua operação digitando o número================\n");
+                Console.WriteLine("| 1 = Sair do Programa | 2 = Calcular Média | 3 = Adição |\n|\n| 4 = Subtração | 5 = Raiz Quadrada |");
                 int opcao = Convert.ToInt32(Console.ReadLine());
 
                 if (SAIDA == opcao)
@@ -33,9 +33,14 @@ namespace menu
                 else if (ADICAO == opcao)
                 {
                     Adicao.operacaoAdicao();
-                }else if (SUBTRACAO == opcao)
+                }
+                else if (SUBTRACAO == opcao)
                 {
                     Subtracao.operacaoSubtracao();
+                }
+                else if (RAIZ == opcao)
+                {
+                    Raiz.operacaoRaiz();
                 }
                 else
                 {
