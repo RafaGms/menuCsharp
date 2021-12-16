@@ -8,9 +8,10 @@ namespace menu
 {
     class Subtracao
     {
-
+        
         public static void operacaoSubtracao()
         {
+            Console.WriteLine();
             int quantnumero = 0, valores, total = 0, contador = 0;
             do
             {

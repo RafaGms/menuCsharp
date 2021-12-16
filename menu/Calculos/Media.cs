@@ -10,6 +10,7 @@ namespace menu
     {
         public static void operacaoMedia()
         {
+            Console.WriteLine();
             Console.WriteLine(" Digite o nome do aluno:");
             string nome = Console.ReadLine();
             Console.WriteLine();

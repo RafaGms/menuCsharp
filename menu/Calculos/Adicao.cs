@@ -10,6 +10,7 @@ namespace menu
     {
         public static void operacaoAdicao()
         {
+            Console.WriteLine();
             int quantnumero = 0, valores, total = 0, contador = 0;
             do
             {
